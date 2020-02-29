@@ -11,7 +11,7 @@
 
 body {
     margin: 0;
-    background-color: var(--dark-color);
+    background: var(--dark-color);
     color:  var(--light-text-color);
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -39,5 +39,5 @@ main {
     display: flex;
     justify-content: space-between;
     width: 60%;
-    margin: 150px auto;
+    margin: 150px auto 0;
 }

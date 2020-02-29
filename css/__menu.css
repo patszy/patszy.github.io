@@ -1,0 +1,22 @@
+.menu ul {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.menu ul li {
+    width: 19%;
+    background-color: var(--light-color);
+    line-height: 2.5rem;
+    box-shadow: 5px 5px 10px var(--dark-color);
+    text-transform: capitalize;
+}
+
+.menu ul li:hover {
+    background-color: var(--dark-color);
+    text-shadow: 1px 1px 1px var(--dark-color);
+    color: var(--dark-text-color);
+    box-shadow: none;
+}

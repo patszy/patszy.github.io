@@ -12,6 +12,7 @@
     line-height: 2.5rem;
     box-shadow: 5px 5px 10px var(--dark-color);
     text-transform: capitalize;
+    position: relative;
 }
 
 .menu ul li:hover {

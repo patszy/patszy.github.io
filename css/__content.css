@@ -41,11 +41,7 @@
     justify-content: space-between;
 }
 
-.social ul li {
-    width: 25%;
-}
-
-.social ul  a{
+.social ul a{
     display: block;
     text-decoration: none;
     color: var(--light-text-color);

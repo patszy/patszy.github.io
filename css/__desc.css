@@ -13,6 +13,7 @@
     background: var(--dark-color);
     text-shadow: 1px 1px 1px var(--dark-color);
     color: var(--dark-text-color);
+    text-transform: capitalize;
 }
 
 .description p {

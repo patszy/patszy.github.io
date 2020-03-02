@@ -3,6 +3,7 @@
     --light-color: rgba(214,214,214, 0.75);
     --dark-text-color: white;
     --light-text-color: black;
+    --main-font: 'Roboto Condensed', sans-serif;
 }
 
 * {
@@ -13,7 +14,7 @@ body {
     margin: 0;
     background: var(--dark-color);
     color:  var(--light-text-color);
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: var(--main-font);
     overflow: hidden;
 }
 

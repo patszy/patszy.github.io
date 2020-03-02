@@ -18,61 +18,23 @@
     transform-style: preserve-3d;
 }
 
-/* Opacity solution */
-
-/* .menu ul i::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    line-height: 2.5rem;
-    font-size: 1.5rem;
-    background: var(--light-color);
-    box-shadow: 0 5px 10px var(--dark-color);
-    text-transform: capitalize;
-    color: var(--light-text-color);
-    transition: .4s;
-}
-
-.menu ul i:hover::before {
-    opacity: 0;
-}
-
+.menu ul i::before,
 .menu ul i::after {
-    font-family: var(--main-font);
-    content: attr(afterContent);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     line-height: 2.5rem;
-    background: var(--dark-color);
-    font-weight: normal;
-    text-shadow: 1px 1px 1px var(--dark-color);
     text-transform: capitalize;
-    color: var(--dark-text-color);
-    transition: .4s;
-    opacity: 0;
-}
-
-.menu ul i:hover::after {
-    opacity: 1;
-} */
-
-/* 3d solution */
-
-.menu ul i::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    line-height: 2.5rem;
-    font-size: 1.5rem;
-    box-shadow: 0 5px 10px var(--dark-color);
-    text-transform: capitalize;
-    color: var(--light-text-color);
     transform-style: preserve-3d;
     transition: .2s;
+}
+
+.menu ul i::before {
+    font-size: 1.5rem;
+    color: var(--light-text-color);
+    background: var(--light-color);
+    box-shadow: 0 5px 10px var(--dark-color);
     transform: rotateX(0deg);
     transform-origin: top;
 }
@@ -82,20 +44,12 @@
 }
 
 .menu ul i::after {
-    font-family: var(--main-font);
     content: attr(afterContent);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    line-height: 2.5rem;
-    background: var(--dark-color);
-    text-shadow: 1px 1px 1px var(--dark-color);
-    text-transform: capitalize;
-    font-weight: normal;
     color: var(--dark-text-color);
-    transform-style: preserve-3d;
-    transition: .2s;
+    font-family: var(--main-font);
+    font-weight: normal;
+    text-shadow: 1px 1px 1px var(--dark-color);
+    background: var(--dark-color);
     transform: rotateX(90deg);
     transform-origin: bottom;
 }

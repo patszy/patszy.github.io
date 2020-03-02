@@ -1,5 +1,5 @@
-@import url(./__base.css);
-@import url(./__menu.css);
-@import url(./__options.css);
-@import url(./__content.css);
-@import url(./__desc.css);
+@import url(./base.css);
+@import url(./menu.css);
+@import url(./options.css);
+@import url(./content.css);
+@import url(./desc.css);

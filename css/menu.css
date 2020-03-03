@@ -32,11 +32,9 @@
 
 .menu ul i::before {
     font-size: 1.5rem;
-    color: var(--light-text-color);
-    background: var(--light-color);
-    box-shadow: 0 5px 10px var(--dark-color);
     transform: rotateX(0deg);
     transform-origin: top;
+    box-shadow: 0 5px 10px var(--dark-color);
 }
 
 .menu ul i:hover::before {
@@ -45,11 +43,8 @@
 
 .menu ul i::after {
     content: attr(afterContent);
-    color: var(--dark-text-color);
     font-family: var(--main-font);
     font-weight: normal;
-    text-shadow: 1px 1px 1px var(--dark-color);
-    background: var(--dark-color);
     transform: rotateX(90deg);
     transform-origin: bottom;
 }

@@ -3,7 +3,6 @@
     padding: 70px 20px;
     text-align: center;
     position: relative;
-    background: rgba(176,176,176, 0.75);
     box-shadow: 10px 10px 15px var(--dark-color);
 }
 
@@ -12,7 +11,6 @@
     height: 150px;
     border: 3px solid var(--dark-text-color);
     border-radius: 50%;
-    box-shadow: 0px 10px 10px var(--dark-color);
     position: absolute;
     top: 0;
     left: 50%;
@@ -52,10 +50,4 @@
 .social ul a{
     display: block;
     text-decoration: none;
-    color: var(--light-text-color);
-}
-
-.social ul a:hover {
-    color: var(--dark-text-color);
-    text-shadow: 5px 5px 10px var(--dark-color);
 }

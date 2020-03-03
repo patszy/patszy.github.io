@@ -2,11 +2,10 @@
     width: 60%;
     height: 60vh;
     text-align: center;
-    background: var(--light-color);
-    box-shadow: 10px 10px 15px var(--dark-color);
     position: relative;
     overflow-y: scroll;
     scroll-behavior: smooth;
+    box-shadow: 10px 10px 15px var(--dark-color);
 }
 
 .description section {
@@ -17,9 +16,6 @@
     width: 100px;
     line-height: 2.5rem;
     margin: 0 auto;
-    background: var(--dark-color);
-    text-shadow: 1px 1px 1px var(--dark-color);
-    color: var(--dark-text-color);
     text-transform: capitalize;
 }
 

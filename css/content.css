@@ -1,6 +1,6 @@
 .content {
     width: 35%;
-    padding: 65px 10px 20px;
+    padding: 70px 20px;
     text-align: center;
     position: relative;
     background: rgba(176,176,176, 0.75);
@@ -21,6 +21,7 @@
 
 .content h1 {
     font-weight: normal;
+    margin-bottom: 3px;
 }
 
 .content p:first-of-type {
@@ -29,14 +30,21 @@
     font-style: italic;
 }
 
+.content .intro {
+    margin: 50px auto;
+}
+
 .content p {
-    margin: 25px;
+    margin: 15px;
+}
+
+.social {
+    width: 150px;
+    margin: auto;
+    font-size: 2rem;
 }
 
 .social ul {
-    width: 150px;
-    margin: 50px auto;
-    font-size: 2rem;
     display: flex;
     justify-content: space-between;
 }

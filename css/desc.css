@@ -1,6 +1,6 @@
 .description {
     width: 60%;
-    max-height: 60vh;
+    height: 60vh;
     text-align: center;
     background: var(--light-color);
     box-shadow: 10px 10px 15px var(--dark-color);
@@ -11,7 +11,6 @@
 
 .description section {
     height: 100%;
-
 }
 
 .description .select {

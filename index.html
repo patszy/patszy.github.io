@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/light.css" id="theme" theme="light">
+    <link rel="stylesheet" href="./css/light.css" id="theme">
 
 </head>
 <body>
@@ -21,11 +21,55 @@
 
     <nav class="menu">
         <ul>
-            <li beforeContent="home"><a href="#home"><i class="fas fa-home" afterContent="home"></i></a></li>
-            <li beforeContent="about"><a href="#about"><i class="fas fa-user-tie" afterContent="about"></i></a></li>
-            <li beforeContent="skills"><a href="#skills"><i class="fas fa-cogs" afterContent="skills"></i></i></a></li>
-            <li beforeContent="work"><a href="#work"><i class="fas fa-file-code" afterContent="work"></i></a></li>
-            <li beforeContent="contact"><a href="#contact"><i class="fas fa-envelope" afterContent="contact"></i></a></li>
+            <li><a href="#home">
+                <span class="lang-pl">
+                    <i class="fas fa-home" afterContent="start"></i>
+                </span>
+
+                <span class="lang-en">
+                    <i class="fas fa-home" afterContent="home"></i>
+                </span>
+            </a></li>
+
+            <li><a href="#about">
+                <span class="lang-pl">
+                    <i class="fas fa-user-tie" afterContent="o mnie"></i>
+                </span>
+
+                <span class="lang-en">
+                    <i class="fas fa-user-tie" afterContent="about"></i>
+                </span>
+            </a></li>
+
+            <li><a href="#skills">
+                <span class="lang-pl">
+                    <i class="fas fa-cogs" afterContent="umiejętności"></i></i>
+                </span>
+
+                <span class="lang-en">
+                    <i class="fas fa-cogs" afterContent="skills"></i></i>
+                </span>
+            </a></li>
+
+            <li><a href="#work">
+                <span class="lang-pl">
+                    <i class="fas fa-file-code" afterContent="projekty"></i>
+                </span>
+
+                <span class="lang-en">
+                    <i class="fas fa-file-code" afterContent="work"></i>
+                </span>
+            </a></li>
+
+            <li><a href="#contact">
+                <span class="lang-pl">
+                    <i class="fas fa-envelope" afterContent="kontakt"></i>
+                </span>
+
+                <span class="lang-en">
+                    <i class="fas fa-envelope" afterContent="contact"></i>
+                </span>
+            </a></li>
         </ul>
     </nav>
 
@@ -37,12 +81,10 @@
             <!-- <i class="fas fa-times"></i> -->
         </label>
 
-        <a href="#Lang" class="opt-item">
+        <a href="#Lang" class="opt-item" id="changeLang">
             <img src="img/pl.png"></a>
-            <!-- <img src="img/en.png"></a> -->
         <a href="#Theme" class="opt-item" id="changeTheme">
             <i class="fas fa-moon"></i>
-            <!-- <i class="fas fa-moon"></i> -->
         </a>
     </nav>
 
@@ -51,12 +93,24 @@
             <img src="img/face.png">
 
             <h1>Patryk Szymczyk</h1>
-            <p>Junior Front End Developer</p>
+            <p>
+                <span class="lang-pl">Junior Front End Developer</span>
+                <span class="lang-en">Junior Front End Developer</span>
+            </p>
+
             <div class="intro">
-                <p>Good morning,</p>
-                <p>It's a pleasure for me to host you at my portfolio.</p>
-                <p>Application allows to take a detailed look at my skills, knowledge and projects I was completing for last months.</p>
-                <p>My name is Patryk Szymczyk and I invite you to get to know my person.</p>
+                <span class="lang-pl">
+                    <p>Dzień dobry,</p>
+                    <p>Miło mi gościć Pana/Panią na stronie mojego portfolio.</p>
+                    <p>Aplikacja umożliwia szczegółowy wgląd w moje umiejętności, wiedzę i projekty pisane przez ostatnie miesięce.</p>
+                    <p>Ja nazywam się Patryk Szymczyk i zapraszam do zapoznania się z moją osobą.</p>
+                </span>
+                <span class="lang-en">
+                    <p>Good morning,</p>
+                    <p>It's a pleasure for me to host you at my portfolio.</p>
+                    <p>Application allows to take a detailed look at my skills, knowledge and projects I was completing for last months.</p>
+                    <p>My name is Patryk Szymczyk and I invite you to get to know my person.</p>
+                </span>
             </div>
 
             <div class="social">
@@ -70,15 +124,12 @@
 
         <div class="description">
             <section id="home">
-                <div class="select">Home</div>
                 <p>
                     Here will be section about me or good photo with me hand giving.
                 </p>
             </section>
 
             <section id="about">
-                <div class="select">About</div>
-
                 <p>I have been developing internet applications since a year.
                     I still extend my skills, knowledge and experience in front-end programming.</p>
                 <p>After completing the course, my systematized knowledge allowed me to use Bootstrap, jQuery and React.js frameworks.</p>
@@ -86,22 +137,18 @@
             </section>
 
             <section id="skills">
-                <div class="select">Skills</div>
-                
                 <p>The main area of my work is front end development HTML5, CSS3, JavaScript ES6 and AJAX are my main skills which let me write basic and advanced web apps.</p>
                 <p>I worked with frameworks Bootstrap, jQuery, SASS to write advanced apps with features, aniations and interactive layouts faster.</p>
                 <p>During work I use Git for good work organization, SQL to contact with database and get app data and Adobe Photoshop program.</p>
             </section>
 
             <section id="work">
-                <div class="select">Work</div>
                 <p>
-                    Projects
+                    projects
                 </p>
             </section>
 
             <section id="contact">
-                <div class="select">Contact</div>
                 <p>
                     Contact Form
                 </p>

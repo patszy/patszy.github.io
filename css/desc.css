@@ -2,7 +2,6 @@
     width: 60%;
     height: 60vh;
     text-align: center;
-    position: relative;
     overflow-y: scroll;
     scroll-behavior: smooth;
     box-shadow: 10px 10px 15px var(--dark-color);
@@ -10,15 +9,9 @@
 
 .description section {
     height: 100%;
-}
-
-.description .select {
-    width: 100px;
-    line-height: 2.5rem;
-    margin: 0 auto;
-    text-transform: capitalize;
+    padding: 20px;
 }
 
 .description p {
-    margin: 50px;
+    margin: 20px;
 }

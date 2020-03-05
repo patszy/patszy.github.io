@@ -15,3 +15,15 @@
 .description p {
     margin: 20px;
 }
+
+#contact form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#contact form label,
+#contact form input,
+#contact form textarea {
+    width: 100%;
+}

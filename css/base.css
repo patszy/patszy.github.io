@@ -1,8 +1,9 @@
 :root {
     --dark-color: rgba(32,32,32,0.75);
     --light-color: rgba(214,214,214, 0.75);
-    --dark-text-color: white;
-    --light-text-color: black;
+    --light-text-color: white;
+    --dark-text-color: black;
+    --special-color: #487eb0;
     --main-font: 'Roboto Condensed', sans-serif;
 }
 
@@ -14,6 +15,7 @@ body {
     margin: 0;
     font-family: var(--main-font);
     overflow: hidden;
+    background: var(--dark-text-color);
 }
 
 .bg-image {

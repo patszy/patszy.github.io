@@ -21,7 +21,7 @@
 
     <nav class="menu">
         <ul>
-            <li><a href="#home" class="active">
+            <li><a href="#home">
                 <span class="lang-pl">
                     <i class="fas fa-home" afterContent="start"></i>
                 </span>
@@ -149,9 +149,19 @@
             </section>
 
             <section id="contact">
-                <p>
-                    Contact Form
-                </p>
+                <form action="https://formspree.io/xqkqdwwg" method="POST">
+                    <label> Name:
+                        <input type="text" name="name" placeholder="Your Name">
+                    </label>
+                    <label> Email:
+                        <input type="text" name="email" placeholder="Your Email">
+                    </label>
+                    <label> Message:
+                        <textarea name="message" placeholder="Your Message"></textarea>
+                    </label>
+
+                    <input type="submit" value="Send">
+                </form>
             </section>
         </div>
     </main>

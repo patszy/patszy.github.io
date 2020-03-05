@@ -52,3 +52,11 @@
 .menu ul i:hover::after {
     transform: rotateX(0deg);
 }
+
+.menu ul .active::before {
+    transform: rotateX(90deg);
+}
+
+.menu ul .active::after {
+    transform: rotateX(0deg);
+}

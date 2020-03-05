@@ -1,12 +1,12 @@
-const changeTheme = () => {
+const changeTheme = (theme) => {
     let themeLink = document.getElementById('theme');
     let themeIcon = document.querySelector('#changeTheme i');
 
-    if(themeLink.getAttribute('href') == "./css/light.css"){
+    if(theme == "dark") {
         themeLink.href = "./css/dark.css";
         themeIcon.classList.remove('fa-moon');
         themeIcon.classList.add('fa-sun');
-    } else {
+    } else if(theme == "light") {
         themeLink.href = "./css/light.css";
         themeIcon.classList.remove('fa-sun');
         themeIcon.classList.add('fa-moon');
@@ -38,33 +38,36 @@ const changeLang = () => {
     }
 }
 
+const changeMenu = () => {
+    let menu = document.getElementsByClassName('menu')[0];
+
+    menu.addEventListener('click', (event) => {
+        menu.querySelectorAll('i').forEach((item) => {
+            item.classList.remove('active');
+        });
+
+        event.target.classList.add('active');
+    });
+}
+
+const checkHour = () => {
+    let date = new Date();
+
+    if(date.getHours() >= 19 || date.getHours() <= 7) changeTheme("dark");
+    else changeTheme("light");
+}
+
 window.onload = () => {
 
+    changeMenu();
+    checkHour();
     if(navigator.language == "pl-PL") changeLang();
 
     document.getElementById('changeTheme').onclick = () => {
-        changeTheme();
-    }
-
+        if(document.getElementById('theme').getAttribute('href') == "./css/light.css") changeTheme("dark");
+        else changeTheme("light");
+    };
     document.getElementById('changeLang').onclick = () => {
         changeLang();
-    }
-
-    let date = new Date();
-
-    if(date.getHours() >= 19 || date.getHours() <= 7) {
-        let themeLink = document.getElementById('theme');
-        let themeIcon = document.querySelector('#changeTheme i');
-
-        themeLink.href = "./css/dark.css";
-        themeIcon.classList.remove('fa-moon');
-        themeIcon.classList.add('fa-sun');
-    } else {
-        let themeLink = document.getElementById('theme');
-        let themeIcon = document.querySelector('#changeTheme i');
-
-        themeLink.href = "./css/light.css";
-        themeIcon.classList.remove('fa-sun');
-        themeIcon.classList.add('fa-moon');
     };
 };

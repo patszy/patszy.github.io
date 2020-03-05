@@ -43,10 +43,10 @@ const changeMenu = () => {
 
     menu.addEventListener('click', (event) => {
         menu.querySelectorAll('i').forEach((item) => {
-            item.classList.remove('active');
+            item.parentElement.parentElement.classList.remove('active');
         });
 
-        event.target.classList.add('active');
+        event.target.parentElement.parentElement.classList.add('active');
     });
 }
 
@@ -67,6 +67,7 @@ window.onload = () => {
         if(document.getElementById('theme').getAttribute('href') == "./css/light.css") changeTheme("dark");
         else changeTheme("light");
     };
+
     document.getElementById('changeLang').onclick = () => {
         changeLang();
     };

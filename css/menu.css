@@ -53,10 +53,10 @@
     transform: rotateX(0deg);
 }
 
-.menu ul .active::before {
+.menu ul .active i::before {
     transform: rotateX(90deg);
 }
 
-.menu ul .active::after {
+.menu ul .active i::after {
     transform: rotateX(0deg);
 }

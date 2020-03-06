@@ -74,16 +74,16 @@
     </nav>
 
     <nav class="options">
-        <input type="checkbox" href="#" class="opt-open" name="opt-open" id="opt-open" />
+        <input type="checkbox" href="#" class="options--open" name="opt-open" id="opt-open" />
 
-        <label class="opt-button" for="opt-open">
+        <label class="options__button" for="opt-open">
             <i class="fas fa-cog"></i>
             <!-- <i class="fas fa-times"></i> -->
         </label>
 
-        <a href="#" class="opt-item" id="changeLang">
+        <a href="#" class="options__item" id="changeLang">
             <img src="img/pl.png"></a>
-        <a href="#" class="opt-item" id="changeTheme">
+        <a href="#" class="options__item" id="changeTheme">
             <i class="fas fa-moon"></i>
         </a>
     </nav>
@@ -98,7 +98,7 @@
                 <span class="lang-en">Junior Front End Developer</span>
             </p>
 
-            <div class="intro">
+            <div class="content__intro">
                 <span class="lang-pl">
                     <p>Dzień dobry,</p>
                     <p>Miło mi gościć Pana/Panią na stronie mojego portfolio.</p>
@@ -113,16 +113,16 @@
                 </span>
             </div>
 
-            <div class="social">
+            <div class="content__social">
                 <ul>
-                    <li><a href="#"><i class="fab fa-github"></i></a></li>
-                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://github.com/patszy"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/patryk-szymczyk"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://www.facebook.com/patryk.szymczyk.3"><i class="fab fa-facebook"></i></a></li>
                 </ul>
             </div>
         </div>
 
-        <div class="description">
+        <div class="desc">
             <section id="home">
                 <p>
                     Here will be section about me or good photo with me hand giving.
@@ -143,28 +143,81 @@
             </section>
 
             <section id="work">
-                <p>
-                    projects
-                </p>
+                <div class="work__card">
+                    <div class="card__face face--front">
+                        <div class="face__content">
+
+                        </div>
+                    </div>
+                    <div class="card__face face--back">
+                        <div class="face__content">
+                            <h1>Gradebook</h1>
+                            <p>Gradebook counting average and seraching students by name and average, data form JSON</p>
+                            <p>Technologies: HTML, CSS, JavaScript.</p>
+                            <a href="https://patszy.github.io/gradebook/"><i class="fas fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work__card">
+                    <div class="card__face face--front">
+                        <div class="face__content">
+
+                        </div>
+                    </div>
+                    <div class="card__face face--back">
+                        <div class="face__content">
+                            <h1>Coming soon</h1>
+                            <p>Simple PSD to HTML template.</p>
+                            <p>Technologies: HTML, CSS, JavaScript.</p>
+                            <a href="https://patszy.github.io/PSD_Template_ComingSoon/"><i class="fas fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work__card">
+                    <div class="card__face face--front">
+                        <div class="face__content">
+                            <span class="lang-pl"><h1>Już wkrótce...</h1></span>
+                            <span class="lang-en"><h1>Coming Soon...</h1></span>
+                        </div>
+                    </div>
+                    <div class="card__face face--back">
+                        <div class="face__content">
+                            <h1>Coming soon</h1>
+                            <p>Description</p>
+                            <p>Technologies</p>
+                            <a href="https://patszy.github.io/PSD_Template_ComingSoon/"><i class="fas fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+
             </section>
 
             <section id="contact">
-                <h2>Contact Me</h2>
+                <h2>
+                    <span class="lang-pl">Skontaktuj się</span>
+                    <span class="lang-en">Contact Me</span>
+                </h2>
+
                 <form action="https://formspree.io/xqkqdwwg" method="POST">
-                    <label> <span>Name:</span>
+                    <label>
                         <i class="fa fa-user icon"></i>
                         <input type="text" name="name" placeholder="Your Name" required >
                     </label>
-                    <label> <span>Email:</span>
+
+                    <label>
                         <i class="fa fa-envelope icon"></i>
                         <input type="email" name="email" placeholder="Your Email" required >
                     </label>
-                    <label> <span>Message:</span>
+
+                    <label>
                         <i class="fa fa-envelope-open-text icon"></i>
                         <textarea name="message" placeholder="Your Message" required ></textarea>
                     </label>
 
-                    <input type="submit" value="Send">
+                    <span class="lang-pl"><input type="submit" value="Wyślij"></span>
+                    <span class="lang-en"><input type="submit" value="Send"></span>
                 </form>
             </section>
         </div>

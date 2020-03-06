@@ -1,0 +1,66 @@
+#contact {
+    padding: 30px;
+}
+
+#contact form {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+#contact h2 {
+    font-weight: normal;
+}
+
+#contact form label,
+#contact form input:not([type="submit"]),
+#contact form textarea {
+    flex-basis: 100%;
+    font-family: var(--main-font);
+}
+
+#contact form .icon {
+    padding: 10px 20px;
+    color: var(--special-color);
+    font-size: 1.5rem;
+}
+
+#contact form label {
+    display: flex;
+    margin: 10px 0;
+    text-align: left;
+}
+
+#contact form textarea {
+    height: 150px;
+    resize: none;
+    overflow-y: auto;
+}
+
+#contact form input,
+#contact form textarea {
+    border: 0;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: transparent;
+}
+
+#contact form input:focus:not([type="submit"]),
+#contact form textarea:focus {
+    outline: 0;
+    border-bottom: 5px solid var(--special-color);
+}
+
+#contact form input[type="submit"] {
+    flex-basis: 30%;
+    margin: 50px 0 0;
+    font-size: 1rem;
+    padding: 10px 30px;
+    font-family: var(--main-font);
+    box-shadow: 0 0 10px var(--dark-color);
+}
+
+#contact form input[type="submit"]:hover {
+    font-weight: bold;
+    box-shadow: none;
+}

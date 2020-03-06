@@ -29,7 +29,7 @@
     color: var(--special-color);
 }
 
-.content .intro {
+.content__intro {
     margin: 50px auto;
 }
 
@@ -37,24 +37,24 @@
     margin: 15px;
 }
 
-.social {
+.content__social {
     width: 150px;
     margin: auto;
     font-size: 2rem;
 }
 
-.social ul {
+.content__social ul {
     display: flex;
     justify-content: space-between;
 }
 
-.social ul a{
+.content__social ul a{
     display: block;
     text-decoration: none;
     color: var(--special-color);
 }
 
-.social ul a:hover{
+.content__social ul a:hover{
     color: var(--light-text-color);
     display: block;
     text-decoration: none;

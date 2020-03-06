@@ -10,15 +10,15 @@ body {
     background: rgba(16,16,16, 0.75);
 }
 
-.social ul a:hover {
+.content__social ul a:hover {
     text-shadow: 0 0 15px var(--special-color);
 }
 
-.description {
+.desc section{
     background: var(--dark-color);
 }
 
-.description .select {
+.desc .select {
     background: var(--light-color);
     text-shadow: 1px 1px 1px var(--light-color);
     color: var(--light-text-color);
@@ -35,14 +35,31 @@ body {
     background: var(--light-color);
 }
 
-.opt-item,
-.opt-button {
+.options__item,
+.options__button {
    color: var(--light-color);
    box-shadow: 0 0 10px var(--light-color);
 }
 
+/* Work */
+
+.face--front {
+    background-color: var(--dark-color);
+}
+
+.face--back {
+    background-color: var(--dark-color);
+}
+
+.face__content a:hover {
+    text-decoration: none;
+    color: var(--light-text-color);
+    text-shadow: 0 0 10px var(--special-color);
+}
+
+/* Contact */
+
 #contact form .icon {
-    box-shadow: 0 0 3px var(--light-color);
     border-bottom: 3px solid var(--light-color);
 }
 

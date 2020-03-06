@@ -1,4 +1,4 @@
-.description {
+.desc {
     width: 60%;
     height: 60vh;
     text-align: center;
@@ -7,79 +7,15 @@
     box-shadow: 10px 10px 15px var(--dark-color);
 }
 
-.description section {
+.desc section {
     height: 100%;
     padding: 20px;
 }
 
-.description p {
+.desc section:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.desc p {
     margin: 20px;
-}
-
-#contact form {
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-}
-
-#contact h2 {
-    font-weight: normal;
-}
-
-#contact form label,
-#contact form input:not([type="submit"]),
-#contact form textarea {
-    flex-basis: 100%;
-    font-family: var(--main-font);
-}
-
-#contact form .icon {
-    padding: 10px 20px;
-    margin-left: 10px;
-    color: var(--special-color);
-    font-size: 1.5rem;
-}
-
-
-#contact form label {
-    display: flex;
-    margin: 10px;
-    text-align: left;
-}
-
-#contact form label span {
-    flex-basis: 20%;
-}
-
-#contact form textarea {
-    height: 150px;
-    resize: none;
-    overflow-y: auto;
-}
-
-#contact form input,
-#contact form textarea {
-    border: 0;
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: transparent;
-}
-
-#contact form input:focus:not([type="submit"]),
-#contact form textarea:focus {
-    outline: 0;
-    border-bottom: 3px solid var(--special-color);
-}
-
-#contact form input[type="submit"] {
-    margin: 10px;
-    font-size: 1rem;
-    padding: 10px 30px;
-    font-family: var(--main-font);
-    box-shadow: 0 0 10px var(--dark-color);
-}
-
-#contact form input[type="submit"]:hover {
-    font-weight: bold;
-    box-shadow: none;
 }

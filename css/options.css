@@ -8,8 +8,8 @@
    text-align: center;
 }
 
-.opt-item,
-.opt-button {
+.options__item,
+.options__button {
    border-radius: 100%;
    width: 50px;
    height: 50px;
@@ -21,47 +21,47 @@
    font-size: 2rem;
 }
 
-.opt-item {
+.options__item {
    opacity: 0;
    text-decoration: none;
 }
 
-.opt-open {
+.options--open {
    display: none;
 }
 
-.opt-item:nth-child(3),
-.opt-item:nth-child(4) {
+.options__item:nth-child(3),
+.options__item:nth-child(4) {
    transition-duration: .18s;
 }
 
-.opt-button {
+.options__button {
    z-index: 1;
    cursor: pointer;
 }
 
-.opt-open:checked + .opt-button {
+.options--open:checked + .options__button {
    transition-duration: .2s;
    transform: scale(0.7, 0.7) rotate(180deg);
    box-shadow: none;
 }
 
-.opt-open:checked ~ .opt-item {
+.options--open:checked ~ .options__item {
    transition-timing-function: cubic-bezier(1, 0, 0.3, 1.5);
    opacity: 1;
 }
 
-.opt-open:checked ~ .opt-item:nth-child(3) {
+.options--open:checked ~ .options__item:nth-child(3) {
    transition-duration: .18s;
    transform: rotate(168deg) translate(75px) rotate(-168deg);
 }
 
-.opt-open:checked ~ .opt-item:nth-child(4) {
+.options--open:checked ~ .options__item:nth-child(4) {
    transition-duration: .28s;
    transform: rotate(113deg) translate(75px) rotate(-113deg);
 }
 
-.opt-item img {
+.options__item img {
    width: 70%;
    height: 70%;
    position: absolute;

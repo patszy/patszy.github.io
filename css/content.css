@@ -55,6 +55,7 @@
 }
 
 .social ul a:hover{
+    color: var(--light-text-color);
     display: block;
     text-decoration: none;
 }

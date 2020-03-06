@@ -11,7 +11,6 @@ body {
 }
 
 .social ul a:hover {
-    color: var(--light-text-color);
     text-shadow: 0 0 15px var(--special-color);
 }
 
@@ -40,4 +39,32 @@ body {
 .opt-button {
    color: var(--light-color);
    box-shadow: 0 0 10px var(--light-color);
+}
+
+#contact form .icon {
+    box-shadow: 0 0 3px var(--light-color);
+    border-bottom: 3px solid var(--light-color);
+}
+
+#contact form input:not([type="submit"]),
+#contact form textarea {
+    color: var(--light-color);
+    border-bottom: 3px solid var(--light-color);
+}
+
+#contact form input:focus,
+#contact form textarea:focus {
+    background-color: var(--light-color);
+}
+
+#contact form input[type="submit"] {
+    background-color: var(--special-color);
+    color: var(--light-color);
+}
+
+#contact form input[type="submit"]:hover,
+#contact form input[type="submit"]:focus {
+    background-color: var(--light-color);
+    color: var(--special-color);
+    text-shadow: 0 0 10px var(--light-color);
 }

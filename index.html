@@ -149,15 +149,19 @@
             </section>
 
             <section id="contact">
+                <h2>Contact Me</h2>
                 <form action="https://formspree.io/xqkqdwwg" method="POST">
-                    <label> Name:
-                        <input type="text" name="name" placeholder="Your Name">
+                    <label> <span>Name:</span>
+                        <i class="fa fa-user icon"></i>
+                        <input type="text" name="name" placeholder="Your Name" required >
                     </label>
-                    <label> Email:
-                        <input type="text" name="email" placeholder="Your Email">
+                    <label> <span>Email:</span>
+                        <i class="fa fa-envelope icon"></i>
+                        <input type="email" name="email" placeholder="Your Email" required >
                     </label>
-                    <label> Message:
-                        <textarea name="message" placeholder="Your Message"></textarea>
+                    <label> <span>Message:</span>
+                        <i class="fa fa-envelope-open-text icon"></i>
+                        <textarea name="message" placeholder="Your Message" required ></textarea>
                     </label>
 
                     <input type="submit" value="Send">

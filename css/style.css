@@ -3,7 +3,10 @@
 @import url(./options.css);
 @import url(./content.css);
 @import url(./desc.css);
+@import url(./desc_home.css);
 @import url(./desc_about.css);
 @import url(./desc_skills.css);
 @import url(./desc_work.css);
 @import url(./desc_form.css);
+
+@import url(./rwd.css);

@@ -1,0 +1,18 @@
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#home h1 {
+    margin: 0;
+    flex-basis: 100%;
+    font-size: 5rem;
+    color: var(--special-color);
+    text-shadow: 1px 1px 1px var(--dark-color);
+}
+
+#home img {
+    width: 100%;
+}

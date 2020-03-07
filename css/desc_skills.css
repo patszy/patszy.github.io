@@ -1,31 +1,23 @@
-#skills .first-idea {
-    height: 100%;
-}
-
-#skills .first-idea ul {
+#skills {
     height: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 
-#skills .first-idea ul li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    height: 30%;
+#skills p {
+    margin: 0;
 }
 
-#skills .first-idea ul img {
-    width: 50%;
+#skills ul {
+    width: 80%;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
 }
 
-#skills .first-idea ul li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    height: 30%;
+#skills ul li img{
+    width: 64px;
+    transition: .4s linear;
 }

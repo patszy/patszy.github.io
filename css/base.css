@@ -11,17 +11,25 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     margin: 0;
     font-family: var(--main-font);
     overflow: hidden;
     background: var(--dark-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .bg-image {
     background: url(../img/background.jpg);
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: center;
     filter: blur(10px);
     width: 100%;
@@ -40,8 +48,8 @@ ul {
 main {
     display: flex;
     justify-content: space-between;
-    width: 60%;
-    margin: 150px auto 0;
+    flex-basis: 60%;
+    height: 60%;
 }
 
 .lang-pl {

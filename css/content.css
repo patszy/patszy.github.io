@@ -1,9 +1,13 @@
 .content {
     width: 35%;
-    padding: 70px 20px;
+    padding: 70px 30px 30px;
     text-align: center;
     position: relative;
     box-shadow: 10px 10px 15px var(--dark-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .content img {
@@ -17,9 +21,10 @@
     transform: translate(-50%, -50%);
 }
 
-.content h1 {
+.content div:first-of-type h1,
+.content div:first-of-type p {
     font-weight: normal;
-    margin-bottom: 3px;
+    margin: 5px;
 }
 
 .content p span {
@@ -29,17 +34,8 @@
     color: var(--special-color);
 }
 
-.content__intro {
-    margin: 50px auto;
-}
-
-.content p {
-    margin: 15px;
-}
-
 .content__social {
     width: 150px;
-    margin: auto;
     font-size: 2rem;
 }
 

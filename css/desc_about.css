@@ -1,0 +1,18 @@
+#about,
+#about span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#about i {
+    font-size: 2rem;
+    color: var(--special-color);
+    text-shadow: 1px 1px 1px var(--dark-color);
+    flex-basis: 100%;
+}
+
+#about p {
+    margin: 0;
+}

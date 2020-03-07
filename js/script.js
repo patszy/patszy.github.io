@@ -21,7 +21,7 @@ const changeLang = () => {
 
     if(htmlLang.lang == "en"){
         htmlLang.lang = "pl";
-        langIcon.src = "img/en.png";
+        langIcon.src = "img/icons/en.png";
 
         for(let i=0; i<tabPl.length; i++){
             tabPl[i].style.display = "inherit";
@@ -29,7 +29,7 @@ const changeLang = () => {
         }
     } else {
         htmlLang.lang = "en";
-        langIcon.src = "img/pl.png";
+        langIcon.src = "img/icons/pl.png";
 
         for(let i=0; i<tabEn.length; i++){
             tabPl[i].style.display = "none";

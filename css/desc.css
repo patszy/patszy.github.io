@@ -23,7 +23,6 @@
 
 .desc::-webkit-scrollbar {
     width: 12px;
-    background-color: var(--light-color);
 }
 
 .desc::-webkit-scrollbar-thumb {

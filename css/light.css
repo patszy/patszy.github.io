@@ -24,6 +24,12 @@ body {
     color: var(--light-text-color);
 }
 
+.hamburger__inner,
+.hamburger__inner::before,
+.hamburger__inner::after {
+    background-color: var(--dark-text-color);
+}
+
 .menu ul i::before {
     color: var(--dark-text-color);
     background: var(--light-color);

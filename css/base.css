@@ -29,12 +29,11 @@ body {
 .bg-image {
     background: url(../img/background.jpg);
     background-size: cover;
-    background-attachment: scroll;
     background-position: center;
     filter: blur(10px);
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: -9999;
 }

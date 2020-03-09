@@ -9,3 +9,54 @@
         flex-basis: 80%;
     }
 }
+
+@media all and (max-width: 992px) {
+    main {
+        flex-basis: 100%;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .menu ul {
+        padding-top: 3rem;
+        width: 100%;
+        display: none;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        background: var(--light-text-color);
+    }
+
+    .menu ul li {
+        width: 100%;
+    }
+
+    body,
+    .desc {
+        overflow: auto;
+    }
+
+    main {
+        flex-basis: 100%;
+        height: auto;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .content,
+    .desc {
+        width: 100%;
+        height: 100vh;
+        box-shadow: none;
+    }
+
+    .content {
+        padding: 30px;
+    }
+
+    .content img {
+        position: relative;
+        left: 0;
+        transform: none;
+    }
+}

@@ -53,7 +53,7 @@ const changeMenu = () => {
 const checkHour = () => {
     let date = new Date();
 
-    if(date.getHours() >= 19 || date.getHours() <= 7) changeTheme("dark");
+    if(date.getHours() > 18 || date.getHours() < 7) changeTheme("dark");
     else changeTheme("light");
 }
 

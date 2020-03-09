@@ -1,5 +1,6 @@
 #contact {
     padding: 30px;
+    height: 100%;
 }
 
 #contact form {
@@ -53,7 +54,6 @@
 
 #contact form input[type="submit"] {
     flex-basis: 30%;
-    margin: 50px 0 0;
     font-size: 1rem;
     padding: 10px 30px;
     font-family: var(--main-font);

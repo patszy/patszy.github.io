@@ -57,11 +57,17 @@ const checkHour = () => {
     else changeTheme("light");
 }
 
+const handleClick = () => {
+    document.querySelector('.hamburger').classList.toggle('hamburger--active');
+    document.querySelector('.menu').classList.toggle('menu--active');
+}
+
 window.onload = () => {
 
     changeMenu();
     checkHour();
     if(navigator.language == "pl-PL") changeLang();
+    document.querySelector('.hamburger').addEventListener('click', handleClick);
 
     document.getElementById('changeTheme').onclick = () => {
         if(document.getElementById('theme').getAttribute('href') == "./css/light.css") changeTheme("dark");

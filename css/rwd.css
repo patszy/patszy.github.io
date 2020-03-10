@@ -17,12 +17,22 @@
 }
 
 @media all and (max-width: 768px) {
-    .menu ul {
-        padding-top: 3rem;
+    .hamburger {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
         width: 100%;
-        display: none;
-        justify-content: center;
-        text-align: center;
+        transform: translateY(-100%);
+    }
+
+    .menu--active {
+        transform: translateY(0px);
+    }
+
+    .menu ul {
+        width: 100%;
         flex-direction: column;
         background: var(--light-text-color);
     }

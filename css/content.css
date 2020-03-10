@@ -27,7 +27,7 @@
     margin: 5px;
 }
 
-.content p span {
+.content div:first-of-type p {
     margin: 0;
     font-weight: normal;
     font-style: italic;

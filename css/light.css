@@ -14,8 +14,8 @@ body {
     text-shadow: 0 0 10px var(--dark-color);
 }
 
-.desc::-webkit-scrollbar {
-    background-color: var(--light-color);
+.desc::-webkit-scrollbar-track {
+    background-color: var(--dark-color);
 }
 
 .desc section{

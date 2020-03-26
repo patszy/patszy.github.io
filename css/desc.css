@@ -1,7 +1,7 @@
 .desc {
     width: 60%;
     text-align: center;
-    overflow-y: auto;
+    overflow: hidden;
     scroll-behavior: smooth;
     box-shadow: 10px 10px 15px var(--dark-color);
 }
@@ -9,17 +9,8 @@
 .desc section {
     height: 100%;
     padding: 20px;
-    border-bottom: 3px solid var(--special-color)
 }
 
 .desc p {
     margin: 20px;
-}
-
-.desc::-webkit-scrollbar {
-    width: 7px;
-}
-
-.desc::-webkit-scrollbar-thumb {
-    background-color: var(--special-color);
 }

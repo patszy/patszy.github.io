@@ -18,10 +18,18 @@ const changeLang = () => {
     let tabPl = document.getElementsByClassName('lang-pl');
     let tabEn = document.getElementsByClassName('lang-en');
     let htmlLang = document.querySelector('html');
+    let form = document.querySelector('#contact form');
+    let formName = form.getElementsByTagName('input')[0];
+    let formTextArea = form.getElementsByTagName('textarea')[0];
+    let formSubmit = form.getElementsByTagName('input')[2];
 
     if(htmlLang.lang == "en"){
         htmlLang.lang = "pl";
         langIcon.src = "img/icons/en.png";
+
+        formName.placeholder = "Imię";
+        formTextArea.placeholder = "Wiadomość";
+        formSubmit.value = "Wyślij";
 
         for(let i=0; i<tabPl.length; i++){
             tabPl[i].style.display = "inherit";
@@ -30,6 +38,10 @@ const changeLang = () => {
     } else {
         htmlLang.lang = "en";
         langIcon.src = "img/icons/pl.png";
+
+        formName.placeholder = "Name";
+        formTextArea.placeholder = "Message";
+        formSubmit.value = "Send";
 
         for(let i=0; i<tabEn.length; i++){
             tabPl[i].style.display = "none";
